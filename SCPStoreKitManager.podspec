@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   end
   s.subspec 'SCPStoreKitReceiptValidator' do |validator|
     validator.dependency 'SCPStoreKitManager/Core'
-    validator.dependency 'OpenSSL-Universal', :git => 'https://github.com/krzyzanowskim/OpenSSL.git', :branch => :master
+    validator.dependency 'OpenSSL-Universal', :git => 'https://github.com/krzyzanowskim/OpenSSL.git'
     validator.source_files = 'Classes/SCPStoreKitReceiptValidator/**/*.{h,m}'
     validator.resource_bundles = {'SCPStoreKitReceiptValidatorResources' => ['Classes/SCPStoreKitReceiptValidator/**/*.{cer}']}
     validator
