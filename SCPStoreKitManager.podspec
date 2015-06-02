@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/steprescott/SCPStoreKitManager'
   s.license          = 'MIT'
   s.author           = { 'Ste Prescott' => 'github@ste.me' }
-  s.source           = { :git => 'https://github.com/remiMargaria/SCPStoreKitManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/remiMargaria/SCPStoreKitManager.git'}
   s.social_media_url = 'https://twitter.com/ste_prescott'
 
   s.requires_arc = true
@@ -22,13 +22,11 @@ Pod::Spec.new do |s|
     core.source_files = 'Classes/SCPStoreKitManager.{h,m}',
                         'Classes/Categories/NSError+SCPStoreKitManager.{h,m}'
   end
-
-  s.subspec 'SCPStoreKitReceiptValidator1' do |validator|
+  s.subspec 'SCPStoreKitReceiptValidator' do |validator|
     validator.dependency 'SCPStoreKitManager/Core'
+    validator.dependency 'OpenSSL-for-iOS', '1.0.2.a.0'
     validator.source_files = 'Classes/SCPStoreKitReceiptValidator/**/*.{h,m}'
     validator.resource_bundles = {'SCPStoreKitReceiptValidatorResources' => ['Classes/SCPStoreKitReceiptValidator/**/*.{cer}']}
-    validator.dependency 'OpenSSL-for-iOS', '1.0.2.a.0'
-
     validator
   end
 end
