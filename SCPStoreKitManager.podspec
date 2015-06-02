@@ -25,9 +25,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'SCPStoreKitReceiptValidator1' do |validator|
     validator.dependency 'SCPStoreKitManager/Core'
-    validator.dependency 'OpenSSL-for-iOS', '1.0.2.a.0'
     validator.source_files = 'Classes/SCPStoreKitReceiptValidator/**/*.{h,m}'
     validator.resource_bundles = {'SCPStoreKitReceiptValidatorResources' => ['Classes/SCPStoreKitReceiptValidator/**/*.{cer}']}
+    validator.dependency 'OpenSSL-for-iOS', '1.0.2.a.0'
+
     validator
   end
 end
