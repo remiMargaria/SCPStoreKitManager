@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
                         'Classes/Categories/NSError+SCPStoreKitManager.{h,m}'
   end
 
-  s.subspec 'SCPStoreKitReceiptValidator' do |validator|
+  s.subspec 'SCPStoreKitReceiptValidator1' do |validator|
     validator.dependency 'SCPStoreKitManager/Core'
     validator.dependency 'OpenSSL-for-iOS', '1.0.2.a.0'
     validator.source_files = 'Classes/SCPStoreKitReceiptValidator/**/*.{h,m}'
