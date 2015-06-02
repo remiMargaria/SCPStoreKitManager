@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/steprescott/SCPStoreKitManager'
   s.license          = 'MIT'
   s.author           = { 'Ste Prescott' => 'github@ste.me' }
-  s.source           = { :git => 'https://github.com/steprescott/SCPStoreKitManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/remiMargaria/SCPStoreKitManager.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ste_prescott'
 
   s.requires_arc = true
